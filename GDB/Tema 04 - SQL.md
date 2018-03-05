@@ -16,9 +16,9 @@ Antes de empezar hay que tener en cuenta varias características del lenguaje **
 | ***MEDIUMINT*** (tamaño) | -8388608 to 8388607 normal. 0 to 16777215 UNSIGNED*.         |
 | ***INT*** (tamaño)       | -2147483648 to 2147483647 normal. 0 to 4294967295 UNSIGNED*. |
 | ***BIGINT*** (tamaño)    | -9223372036854775808 to 9223372036854775807 normal. 0 to 18446744073709551615 UNSIGNED*. |
-| ***FLOAT*** (i,d)        | Número pequeño con coma flotante. <br />`i - Números izqda, d - Números dcha. ` |
-| ***DOUBLE*** (i,d)       | Número grande con coma flotante. <br />`i - Números izqda, d - Números dcha. ` |
-| ***DECIMAL*** (i,d)      | Como un ***DOUBLE*** pero guardado en forma de STRING.<br /> `i - Números izqda, d - Números dcha.` |
+| ***FLOAT*** (t,d)        | Número pequeño con coma flotante. <br />`t - total de números que puede almacenar, d - Número de decimales. ` |
+| ***DOUBLE*** (t,d)       | Número grande con coma flotante. <br />`t - total de números que puede almacenar, d - Número de decimales. ` |
+| ***DECIMAL*** (t,d)      | Como un ***DOUBLE*** pero guardado en forma de STRING.<br /> `t - total de números que puede almacenar, d - Número de decimales.` |
 
   - **Tipo Texto**
 
@@ -262,7 +262,7 @@ INSERT INTO PIZZAS (idPizza,name,price,date_creation)
 VALUES (12,'Carbonara',6.5,'2018-3-1');
 ```
 
-*Tenemos que saber que los tipos de datos de fechas y de texto van entre comillas simples, mientras que los númericos no llevan **menos** el de tipo `DECIMAL`* .
+*Tenemos que saber que los tipos de datos de fechas y de texto van entre comillas simples, mientras que los númericos no llevan*.
 
 La otra forma sería mediante la sentencia `SELECT`. Con esta sentencia tenemos que seleccionar columnas ya existentes, porque con este método realmente no insertamos nuevos valores del todo, si no que cogemos valores de otra columna ya existentes y los copiamos:
 
@@ -386,3 +386,4 @@ WHERE CONDICION;
 DELETE FROM PIZZAS
 WHERE price > 10;
 ```
+
