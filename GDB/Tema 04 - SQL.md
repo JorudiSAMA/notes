@@ -2,11 +2,11 @@
 
 ## Índex
 
-1. [Introducción](#introduccion)
-2. [Tipos de datos](#tipos-de-datos)
-3. [DDL](#DDL)
-4. [DML](#DML)
-5. [QL](QL)
+- [Introducción](#introducción)
+- [Tipos de Datos](#tipos-de-datos)
+- [DDL](#ddl)
+- [DML](#dml)
+- [QL](#ql)
 
 ## Introducción
 
