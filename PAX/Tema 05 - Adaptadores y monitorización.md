@@ -9,7 +9,7 @@
 
 
 
-##1. Configuración de adaptadores
+## 1. Configuración de adaptadores
 
 Un **adaptador de red** es la pieza que permite a los dispositivos acceder a la red. Ejemplos:
 
