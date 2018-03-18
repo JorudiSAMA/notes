@@ -549,3 +549,4 @@ Las operaciones que hace el administrador de red sobre los dispositivos administ
 - **Universalidad** del protocolo
 - **Extensibilidad** del protocolo
 - **Flexibilidad** del protocolo
+- JorudiSAMA
