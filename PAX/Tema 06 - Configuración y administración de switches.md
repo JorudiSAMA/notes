@@ -1,26 +1,6 @@
 # Tema 06 - Configuración y administración de switches
 
-## Índice
-
-1. Configuración de switches
-   1. Segmentación de la red
-   2. Switches
-      1. Características de los switches
-      2. Formas de hacer 'switching'
-      3. Switching simétrico y asimétrico
-   3. Configuración del switch I
-   4. Trabajo con Cisco IOS
-   5. Ayuda con Cisco IOS
-   6. Configuración del switch II
-2. Administración de switches
-   1. Secuencia de arranque de un switch
-   2. Configuración de la interfaz de administración
-   3. Configuración Telnet y SSH
-   4. Administración de las tablas MAC
-   5. Administración de ficheros de configuración
-   6. Actualizar el sistema operativo del switch
-   7. Configuración del spanning tree protocol (STP)
-   8. Configuración de seguridad
+[TOC]
 
 ## 1. Configuración de switches
 
@@ -544,13 +524,13 @@ Switch#
 
 Una vez hecho esto, tenemos que asigar un puerto para que el switch trabaje desde esta **VLAN**. Accederíamos al modo de configuración de la interfaz correspondiente y utilizaríamos el comando `switchport` que sirve para configurar las características de switching de un puerto. `switchport` puede tomar uno de estos dos parámetros:
 
-- `access` 
+- `access`
 
   Canvia las características del modo de acceso a la interfaz. Permite al puerto en cuestión acceder a la VLAN introducida. Sintaxis:
 
   `switchport access (vlan) (numero_vlan)`
 
-- `mode` 
+- `mode`
 
   Establece el modo de funcionamiento de la interfaz. Este parámetro cuando lo introducimos tenemos que proseguir con otro param. de sus hijos:
 
@@ -632,7 +612,7 @@ Como ya sabemos, **SSH** es mejor que **Telnet** por temas de **seguridad**, ya 
 Entrar en el **modo de configuración global**:
 
 ```
-
+configure terminal
 ```
 
 Configurar el **nombre de host** para el switch:
@@ -872,3 +852,8 @@ Switch(config)#
 
 ## 2.8 Configuración de seguridad
 
+...
+
+------
+
+***Apuntes por: Jordi Casesnoves Martín@JorudiSAMA - 17/04/2018***
