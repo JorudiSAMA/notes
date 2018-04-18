@@ -20,7 +20,31 @@ Un **dominio de broadcast** es una parte de la red donde todos los dispositivos 
 
 ![](http://2.bp.blogspot.com/-pmJt8sNTN5M/UDy2lcO_zDI/AAAAAAAADcQ/EGA_D-p-Zs4/s1600/Captura.PNG)
 
-Dicho esto, cuando hablamos de **segmentación de la red**, estamos hablando de **dividir todos los dominios de colisión en dos o más partes** y así mejorando el rendimiento de la red.
+Dicho esto, cuando hablamos de **segmentación de la red**, estamos hablando de **dividir todos los dominios de colisión en dos o más partes**. Segmentar la red ofrece estas **ventajas**:
+
+- **Tránsito**:
+
+  Se reduce el tránsito de la red al segmentarla.
+
+- **Fiabilidad**:
+
+  Un ordenador que este roto y haya dos redes, al segmentar, solo una parte se verá afectada.
+
+- **Conectividad**:
+
+  Con un switch se pueden contar dos redes con dos topologías de red diferentes.
+
+- **Nombre de ordenadores**:
+
+  Segmentando la red, aumentamos la cantidad máxima de hosts.
+
+- **Tamaño de la red**:
+
+  Se necesita que la red cubra una larga distancia. Segmentando es posible
+
+- **Seguridad**:
+
+  En una red sin segmentar, cualquier ordenador puede acceder a las tramas que pasan por la red. Si se segmenta, el ordenador solo tendrá acceso a las tramas de su segmento.
 
 > Un hub tiene un único dominio de colisión, es decir, en el caso que dos dispositivos provoquen una colisión en un segmento asociado a un puerto del hub, todos los otros dispositivos de los otros puertos se ven afectados.
 
