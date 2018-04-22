@@ -1,6 +1,56 @@
 # Tema 06 - Configuración y administración de switches
 
-[TOC]
+- [Tema 06 - Configuración y administración de switches](#tema-06---configuraci-n-y-administraci-n-de-switches)
+  * [1. Configuración de switches](#1-configuraci-n-de-switches)
+  * [1.1 Segmentación de la red](#11-segmentaci-n-de-la-red)
+  * [1.2 Switches](#12-switches)
+  * [1.2.1 Características de los Switches](#121-caracter-sticas-de-los-switches)
+  * [1.2.2 Formas de hacer 'switching'](#122-formas-de-hacer--switching-)
+  * [1.2.3 Switching simétrico y asimétrico](#123-switching-sim-trico-y-asim-trico)
+  * [1.3 Configuración del switch I](#13-configuraci-n-del-switch-i)
+  * [1.3.1 Conexión por consola](#131-conexi-n-por-consola)
+  * [1.3.2 Conexión por Telnet y SSH](#132-conexi-n-por-telnet-y-ssh)
+  * [1.4 Trabajo con Cisco IOS](#14-trabajo-con-cisco-ios)
+  * [1.4.1 Modo usuario](#141-modo-usuario)
+  * [1.4.2 Modo de ejecución privilegiada](#142-modo-de-ejecuci-n-privilegiada)
+  * [1.4.3 Modo de configuración global](#143-modo-de-configuraci-n-global)
+  * [1.4.4 Modo de configuración de interfaces](#144-modo-de-configuraci-n-de-interfaces)
+  * [1.5 Ayuda con Cisco IOS](#15-ayuda-con-cisco-ios)
+  * [1.5.1 Acceso Rápido y comandos abreviados](#151-acceso-r-pido-y-comandos-abreviados)
+  * [1.5.2 Verificación de sintaxis](#152-verificaci-n-de-sintaxis)
+  * [1.6 Configuración del switch II](#16-configuraci-n-del-switch-ii)
+  * [1.6.1 Mostrar el estado del switch](#161-mostrar-el-estado-del-switch)
+  * [1.6.2 Comandos en modo de ejecución privilegiada](#162-comandos-en-modo-de-ejecuci-n-privilegiada)
+  * [1.6.3 Comandos en modo de configuración global](#163-comandos-en-modo-de-configuraci-n-global)
+  * [1.6.4 Configuración de contraseñas](#164-configuraci-n-de-contrase-as)
+  * [1.6.5 Configuración de interfaces](#165-configuraci-n-de-interfaces)
+  * [2. Administración de los switches](#2-administraci-n-de-los-switches)
+  * [2.1 Secuencia de arranque del switch](#21-secuencia-de-arranque-del-switch)
+  * [2.1.1 Inicialización de emergencia](#211-inicializaci-n-de-emergencia)
+  * [2.2 Configuración de la interfaz de administración](#22-configuraci-n-de-la-interfaz-de-administraci-n)
+  * [2.2.1 Configurar la interfaz de administración](#221-configurar-la-interfaz-de-administraci-n)
+  * [2.3 Configuración Telnet y SSH](#23-configuraci-n-telnet-y-ssh)
+  * [2.3.1 Configuración Telnet](#231-configuraci-n-telnet)
+  * [2.3.2 Configuración SSH](#232-configuraci-n-ssh)
+  * [2.4 Administración de las tablas MAC](#24-administraci-n-de-las-tablas-mac)
+  * [2.5 Administración de los ficheros de configuración](#25-administraci-n-de-los-ficheros-de-configuraci-n)
+  * [2.5 Actualizar el sistema operativo del switch](#25-actualizar-el-sistema-operativo-del-switch)
+  * [2.6 Configuración del STP (Spanning Tree Protocol)](#26-configuraci-n-del-stp--spanning-tree-protocol-)
+  * [2.6.1 Funcionamiento del protocolo STP](#261-funcionamiento-del-protocolo-stp)
+  * [2.6.2 Funcionamiento de los puertos](#262-funcionamiento-de-los-puertos)
+  * [2.6.3 Administración del STP en los switches](#263-administraci-n-del-stp-en-los-switches)
+  * [2.8 Configuración de seguridad](#28-configuraci-n-de-seguridad)
+  * [3. Resumen de comandos en Cisco IOS](#3-resumen-de-comandos-en-cisco-ios)
+  * [3.1 'Cookbook'](#31--cookbook-)
+    + [Limitar el acceso mediante conexión remota](#limitar-el-acceso-mediante-conexi-n-remota)
+    + [Configurar una VLAN en un switch](#configurar-una-vlan-en-un-switch)
+    + [Configurar un puerto para una VLAN](#configurar-un-puerto-para-una-vlan)
+    + [Configurar puerta de enlace](#configurar-puerta-de-enlace)
+    + [Configurar acceso Telnet](#configurar-acceso-telnet)
+    + [Configurar acceso SSH](#configurar-acceso-ssh)
+    + [Configurar tabla de direccionamiento MAC](#configurar-tabla-de-direccionamiento-mac)
+    + [Guardar cambios en la configuración](#guardar-cambios-en-la-configuraci-n)
+  * [3.2 Tabla de comandos más comunes](#32-tabla-de-comandos-m-s-comunes)
 
 ## 1. Configuración de switches
 
@@ -959,7 +1009,7 @@ Switch(config)no mac-address-table static 0060.a014.e06e vlan 1 interface FastEt
 Switch(config)copy running-config startup-config
 ```
 
-## 3.2 Tabla de comando más comunes
+## 3.2 Tabla de comandos más comunes
 
 | Comando(s)                      | Acción                                                       | Modo          |
 | :------------------------------ | ------------------------------------------------------------ | :------------ |
