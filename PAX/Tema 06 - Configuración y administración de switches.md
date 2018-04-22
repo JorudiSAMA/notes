@@ -1,8 +1,8 @@
 # Tema 06 - Configuración y administración de switches
 
 - [Tema 06 - Configuración y administración de switches](#tema-06---configuraci-n-y-administraci-n-de-switches)
-  * [1. Configuración de switches](#1-configuraci-n-de-switches)
-  * [1.1 Segmentación de la red](#11-segmentaci-n-de-la-red)
+  * [1. Configuración de switches](#1-configuracion-de-switches)
+  * [1.1 Segmentación de la red](#11-segmentacion-de-la-red)
   * [1.2 Switches](#12-switches)
   * [1.2.1 Características de los Switches](#121-caracter-sticas-de-los-switches)
   * [1.2.2 Formas de hacer 'switching'](#122-formas-de-hacer--switching-)
