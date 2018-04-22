@@ -878,6 +878,122 @@ Switch(config)#
 
 ...
 
+## 3. Resumen de comandos en Cisco IOS
+
+En esta sección vamos a recopilar de manera compacta y visual los comandos más importantes de Cisco IOS.
+
+## 3.1 'Cookbook'
+
+### Limitar el acceso mediante conexión remota
+
+```
+Switch#conf t
+Switch(config)#line vty 0
+Switch(config-line)#password contraseña
+Switch(config-line)#end
+```
+
+### Configurar una VLAN en un switch
+
+```
+Switch#conf t
+Switch(config)#interface vlan 10
+Switch(config-if)#ip address 192.168.0.155 255.255.255.0
+Switch(config-if)#no shutdown
+Switch(config-if)#end
+```
+
+### Configurar un puerto para una VLAN
+
+```
+Switch#configure terminal
+Switch(config)#interface FastEthernet 0/20
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+```
+
+### Configurar puerta de enlace
+
+```
+Switch(config)ip default-gateway 192.168.0.1
+```
+
+### Configurar acceso Telnet
+
+```
+Switch#configure terminal
+Switch(config)#line vty 0 4
+Switch(config-line)#password contraseña12345
+Switch(config-line)#login
+```
+
+### Configurar acceso SSH
+
+```
+Switch#configure terminal
+switch(config)#ip domain-name rtp.cisco.com
+switch(config)#crypto key generate rsa
+switch(config)#ip ssh version 2
+switch(config)#line vty 0 4
+switch(config-line)#transport input SSH
+```
+
+### Configurar tabla de direccionamiento MAC
+
+Configurar una dirección:
+
+```
+Switch(config)mac-address-table static 0060.a014.e06e vlan 1 interface FastEthernet0/3
+```
+
+Borrar una dirección:
+
+```
+Switch(config)no mac-address-table static 0060.a014.e06e vlan 1 interface FastEthernet0/3
+```
+
+### Guardar cambios en la configuración
+
+```
+Switch(config)copy running-config startup-config
+```
+
+## 3.2 Tabla de comando más comunes
+
+| Comando(s)                      | Acción                                                       | Modo          |
+| :------------------------------ | ------------------------------------------------------------ | :------------ |
+| `enable`                        | Accede al modo Ejec. Priv.                                   | Usuario       |
+| `disable`                       | Sale del modo Ejec. Priv.                                    | Ejec. Priv.   |
+| `configure terminal`            | Accede al modo Conf. Glob. La forma abreviada es `conf t`    | Ejec. Priv.   |
+| `copy (origen) (destino)`       | Copia un fichero                                             | Ejec. Priv.   |
+| `delete flash`                  | Borra un fichero de la memoria flash                         | Ejec. Priv.   |
+| `dir`                           | Muestra la lista de ficheros en la memoria flash.            | Ejec. Priv.   |
+| `exit`                          | Sale de la CLI                                               | Ejec. Priv.   |
+| `reload`                        | Reinicia el switch. Carga la startup-config                  | Ejec. Priv.   |
+| `show`                          | Muestra distinta información. Con `show ?` podemos ver las distintas opciones | Ejec. Priv.   |
+| `spanning-tree`                 | Muestra la info. del protocolo STP                           | Ejec. Priv.   |
+| `startup-config`                | Muestra la config de startup                                 | Ejec. Priv.   |
+| `vlan`                          | Muestra la información de las VLAN                           | Ejec. Priv.   |
+| `vtp`                           | Muestra la info. del protocolo VTP                           | Ejec. Priv.   |
+| `access-list`                   | Gestiona las **listas de control de acceso** al switch       | Conf. Glob.   |
+| `banner-motd (mensaje)`         | Define un mensaje de **motd** (message of the day) de bienvenida al switch | Conf. Glob.   |
+| `hostname (nombre)`             | Cambia el nombre del switch                                  | Conf. Glob.   |
+| `interface (nombre_interfaz)`   | Accede al modo de conf. de interfaz. La forma abreviada es `int` | Conf. Glob.   |
+| `line console (linea/s)`        | Accede al modo de conf. de consola no remota                 | Conf. Glob.   |
+| `line vty (linea/s)`            | Accede al modo de conf. de consola remota                    | Conf. Glob.   |
+| `password (contraseña)`         | Contraseña para el modo de conf. de consola, tanto remota como no remota; dependerá de en cual hemos entrado. | Conf. Linea   |
+| `description (descripcion)`     | Aisgna un texto identificativo a la interfaz                 | Conf. Interf. |
+| `duplex ({full | half | auto})` | Configura el modo de funcionamiento de la interfaz           | Conf. Interf. |
+| `mac-address`                   | Muestra la MAC de la interfaz                                | Conf. Interf. |
+| `shutdown`                      | Deshabilita la interfaz                                      | Conf. Interf. |
+| `no shutdown`                   | Habilita la interfaz                                         | Conf. Interf. |
+| `speed (velocidad)`             | Configura la velocidad de la interfaz en Mbps                | Conf. Interf. |
+
+
+
+> **[Click aquí](http://www.ncat.co.uk/net_lib/ncat%20ccna%20cheat%20sheet.pdf) para acceder a la lista completa de comandos en Cisco IOS**
+
 ------
 
-***Apuntes por: Jordi Casesnoves Martín@JorudiSAMA - 17/04/2018***
+***Apuntes por: Jordi Casesnoves Martín@JorudiSAMA - 23/04/2018***
