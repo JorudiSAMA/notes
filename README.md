@@ -1,3 +1,3 @@
 # notes
 
-My notes of this year.
+My notes of my whole career.
