@@ -2,7 +2,7 @@
 
 ### English
 
-Hi! This is my public repository of my whole career's notes. :happy:
+Hi! This is my public repository of my whole career's notes. :smile:
 
 I'm currently studying official IT's career, but I also study by my own some Udemy courses, YouTube tutorials, and much more! 
 
@@ -12,7 +12,7 @@ So I hope that these notes help you to improve your knowledge in the areas that 
 
 ### Spanish
 
-Hola! Este es mi repositorio público de mis apuntes que voy tomando a lo largo de mi carrera! :happy:
+Hola! Este es mi repositorio público de mis apuntes que voy tomando a lo largo de mi carrera! :smile:
 
 Actualmente estoy estudiando IT, pero también hago algunos cursos en Udemy, YouTube, y mucho más!
 
